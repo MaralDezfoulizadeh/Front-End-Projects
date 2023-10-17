@@ -1,2 +1,2 @@
 # Front-End-Projects
-This is a front-end project.
+These are my front-end mini projects.

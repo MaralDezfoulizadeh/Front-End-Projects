@@ -162,9 +162,9 @@ window.onload = function () {
   });
 
   //Count Down Functions
-  const PublishDate_for_Case1 = "15 Oct 2023";
-  const PublishDate_for_Case2 = "28 Sep 2023";
-  const PublishDate_for_Case3 = "29 Nov 2023";
+  const PublishDate_for_Case1 = "15 Oct 2024";
+  const PublishDate_for_Case2 = "28 Sep 2024";
+  const PublishDate_for_Case3 = "29 Nov 2024";
   const Case1_Date__days = document.querySelector(".daysC1");
   const Case1_Date__hours = document.querySelector(".hoursC1");
   const Case1_Date__minutes = document.querySelector(".minutesC1");

@@ -1,0 +1,141 @@
+* {
+  font-family: IRANSans;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+body {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(17, 0, 21);
+  min-height: 100vh;
+  padding-top: 80px;
+}
+header {
+  margin-bottom: 50px;
+  color: white;
+  font-size: 30px;
+  background-color: #a03390;
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 3px solid #b983ff;
+  border-radius: 10px;
+}
+.container input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 5px;
+  font-size: 18px;
+}
+select {
+  width: 120px;
+  height: 40px;
+  padding: 5px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+}
+.selectionBox {
+  position: relative;
+  margin-left: 20px;
+}
+.selectionBox:after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  font-size: 18px;
+  border: none;
+  background: #b356ff;
+  color: #fff;
+  padding: 10px;
+  pointer-events: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.container #add {
+  width: 40px;
+  height: 40px;
+  color: whitesmoke;
+  background-color: #b356ff;
+  border: none;
+  border-radius: 5px;
+  font-size: 28px;
+  transition: border-radius 0.3s ease;
+  cursor: pointer;
+}
+#add:active {
+  box-shadow: 0 0 10px rgb(131, 54, 255);
+}
+#add:hover {
+  border-radius: 20px;
+}
+.item_box {
+  /* border: 3px solid #b983ff; */
+  height: fit-content;
+  width: 80vw;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  border-radius: 5px;
+}
+.item {
+  width: 30%;
+  margin-bottom: 20px;
+  height: fit-content;
+  padding: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  list-style: none;
+  position: relative;
+  transition: all 0.2s ease;
+}
+.item_li {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
+}
+.delete {
+  width: 12%;
+  padding: 5px;
+  height: 100%;
+  font-size: 40px;
+  position: absolute;
+  background-color: rgba(179, 86, 255, 0.3);
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: whitesmoke;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.delete_animation {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+.filterselector {
+  padding-top: 30px;
+  display: none;
+  justify-content: center;
+  align-items: right;
+}

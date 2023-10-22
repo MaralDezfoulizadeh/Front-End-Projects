@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فلان سایت</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c41187dec1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <ul id="topNav">
+        <li><i class="fas fa-search"></i></li>
+        <li>
+          <i class="fas fa-shopping-cart"></i>
+          <small class="item_counter">0</small>
+        </li>
+        <li>
+          <select name="languageSelector" id="langSelect">
+            <option value="0">فارسی</option>
+            <option value="1">English</option>
+          </select>
+        </li>
+        <li><div class="darkmodeSwitch"></div></li>
+      </ul>
+      <div class="shopping_cart_menu"></div>
+      <nav class="navbar">
+        <li class="logo">لوگو</li>
+        <li class="home"><a href="#">خانه</a></li>
+        <!-- <li class="menu1"><a href="#">منو</a></li> -->
+        <li class="products"><a href="#">محصولات</a></li>
+        <div class="menuBox">
+          <div class="menu">
+            <ul>
+              <li>سر مجموعه 1</li>
+              <li>سر مجموعه 2</li>
+              <li>سر مجموعه 3</li>
+              <li>سر مجموعه 4</li>
+              <li>سر مجموعه 5</li>
+              <li>سر مجموعه 5</li>
+              <li>سر مجموعه 5</li>
+              <li>سر مجموعه 5</li>
+              <li>سر مجموعه 5</li>
+              <li>سر مجموعه 5</li>
+              <li>سر مجموعه 5</li>
+            </ul>
+          </div>
+        </div>
+        <li class="howwemade"><a href="#">چگونه می سازیم</a></li>
+        <li id="leftNav">
+          <div>
+            <a href="#" id="login">ورود</a><span>یا</span
+            ><a href="#" id="singup">ثبت نام</a>
+          </div>
+          <button id="HamburgerMenu"></button>
+        </li>
+      </nav>
+      <nav class="ResponsiveNav">
+        <ul>
+          <li class="home_Responsive"><a href="#">خانه</a></li>
+          <li class="products_Responsive"><a href="#">محصولات</a></li>
+          <li class="howwemade_Responsive"><a href="#">چگونه می سازیم</a></li>
+          <li><a href="#" id="AboutUs">درباره ما</a></li>
+          <li><a href="#" id="ContactUs">تماس با ما</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="popuplogin">
+      <i class="fa fa-close"></i>
+      <div class="title">می خوای خرید کنی؟ اول وارد شو!</div>
+      <form id="Login_Form">
+        <div class="numberEntryText">
+          لطفا شماره ی همراه خود را به همراه کد کشور وارد کنید
+        </div>
+        <input type="tel" name="phone_number" class="phoneNumber_Login" />
+        <div class="login_message"></div>
+        <!-- <div class="g-recaptcha" data-sitekey="piuoiy"></div> -->
+        <button type="submit" id="loginsubmit">باشه</button>
+        <div class="WelcomeMessage">شما با موفقیت وارد شدید!</div>
+      </form>
+    </div>
+    <div class="popupSignup">
+      <i class="fa fa-close" id="closeSignup"></i>
+      <div class="signupTitle">
+        ثبت نام کن تا به پرونده های جنایی باحال دست پیدا کنی!
+      </div>
+      <form id="signUp">
+        <div class="fullname">نام و نام خانوادگی:</div>
+        <div class="nameCheckmark"><i class="far fa-check-circle"></i></div>
+        <input type="text" name="full_name" class="name" />
+        <div class="name_message"></div>
+        <div class="phoneNumber">شماره همراه به همراه کد کشور:</div>
+        <div class="phoneCheckmark"><i class="far fa-check-circle"></i></div>
+        <input type="tel" class="phone" />
+        <div class="phone_message"></div>
+        <button type="submit" id="signupSubmit">ثبت نام</button>
+      </form>
+    </div>
+    <section class="Hero_Section">
+      <div class="container">
+        <div class="Case_Container">
+          <div class="Card">
+            <div class="Cases">
+              <div class="case Front_Face">
+                <img src="/Web Project/Images/1.jpg" alt="" />
+              </div>
+              <div class="case Back_Face">
+                <div class="Case_Title">پرونده فلان بیسار</div>
+                <ul>
+                  <li class="Case_Difficulty">درجه سختی: فلان قدر از 10</li>
+                  <li class="Case_Producer">محصول: فلان سایت</li>
+                </ul>
+                <span>توضیحات:</span>
+                <div class="Case_Description">
+                  فلان بیسار فلان بیسارفلان بیسارفلان بیسارفلان بیسارفلان
+                  بیسارفلان بیسارفلان بیسار
+                </div>
+                <button class="Add_to_shopping_cart">
+                  اضافه کردن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="countdownBox">
+            <h3 class="secondsC1">0</h3>
+            <span>ثانیه</span>
+            <h3 class="minutesC1">0</h3>
+            <span>دقیقه</span>
+            <h3 class="hoursC1">0</h3>
+            <span>ساعت</span>
+            <h3 class="daysC1">0</h3>
+            <span>روز</span>
+          </div>
+        </div>
+        <div class="Case_Container">
+          <div class="Card">
+            <div class="Cases">
+              <div class="case Front_Face">
+                <img src="/Web Project/Images/2.jpg" alt="" />
+              </div>
+              <div class="case Back_Face">
+                <div class="Case_Title">پرونده فلان بیسار</div>
+                <ul>
+                  <li class="Case_Difficulty">درجه سختی: فلان قدر از 10</li>
+                  <li class="Case_Producer">محصول: فلان سایت</li>
+                </ul>
+                <span>توضیحات:</span>
+                <div class="Case_Description">
+                  فلان بیسار فلان بیسارفلان بیسارفلان بیسارفلان بیسارفلان
+                  بیسارفلان بیسارفلان بیسار
+                </div>
+                <button class="Add_to_shopping_cart">
+                  اضافه کردن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="countdownBox">
+            <h3 class="secondsC2">0</h3>
+            <span>ثانیه</span>
+            <h3 class="minutesC2">0</h3>
+            <span>دقیقه</span>
+            <h3 class="hoursC2">0</h3>
+            <span>ساعت</span>
+            <h3 class="daysC2">0</h3>
+            <span>روز</span>
+          </div>
+        </div>
+        <div class="Case_Container">
+          <div class="Card">
+            <div class="Cases">
+              <div class="case Front_Face">
+                <img src="/Web Project/Images/3.jpg" alt="" />
+              </div>
+              <div class="case Back_Face">
+                <div class="Case_Title">پرونده فلان بیسار</div>
+                <ul>
+                  <li class="Case_Difficulty">درجه سختی: فلان قدر از 10</li>
+                  <li class="Case_Producer">محصول: فلان سایت</li>
+                </ul>
+                <span>توضیحات:</span>
+                <div class="Case_Description">
+                  فلان بیسار فلان بیسارفلان بیسارفلان بیسارفلان بیسارفلان
+                  بیسارفلان بیسارفلان بیسار
+                </div>
+                <button class="Add_to_shopping_cart">
+                  اضافه کردن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="countdownBox">
+            <h3 class="secondsC3">0</h3>
+            <span>ثانیه</span>
+            <h3 class="minutesC3">0</h3>
+            <span>دقیقه</span>
+            <h3 class="hoursC3">0</h3>
+            <span>ساعت</span>
+            <h3 class="daysC3">0</h3>
+            <span>روز</span>
+          </div>
+        </div>
+        <div class="Case_Container">
+          <div class="Card">
+            <div class="Cases">
+              <div class="case Front_Face">
+                <img src="/Web Project/Images/4.jpg" alt="" />
+              </div>
+              <div class="case Back_Face">
+                <div class="Case_Title">پرونده فلان بیسار</div>
+                <ul>
+                  <li class="Case_Difficulty">درجه سختی: فلان قدر از 10</li>
+                  <li class="Case_Producer">محصول: فلان سایت</li>
+                </ul>
+                <span>توضیحات:</span>
+                <div class="Case_Description">
+                  فلان بیسار فلان بیسارفلان بیسارفلان بیسارفلان بیسارفلان
+                  بیسارفلان بیسارفلان بیسار
+                </div>
+                <button class="Add_to_shopping_cart">
+                  اضافه کردن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="countdownBox">
+            <h3 class="secondsC1">0</h3>
+            <span>ثانیه</span>
+            <h3 class="minutesC1">0</h3>
+            <span>دقیقه</span>
+            <h3 class="hoursC1">0</h3>
+            <span>ساعت</span>
+            <h3 class="daysC1">0</h3>
+            <span>روز</span>
+          </div>
+        </div>
+        <div class="Case_Container">
+          <div class="Card">
+            <div class="Cases">
+              <div class="case Front_Face">
+                <img src="/Web Project/Images/5.jpg" alt="" />
+              </div>
+              <div class="case Back_Face">
+                <div class="Case_Title">پرونده فلان بیسار</div>
+                <ul>
+                  <li class="Case_Difficulty">درجه سختی: فلان قدر از 10</li>
+                  <li class="Case_Producer">محصول: فلان سایت</li>
+                </ul>
+                <span>توضیحات:</span>
+                <div class="Case_Description">
+                  فلان بیسار فلان بیسارفلان بیسارفلان بیسارفلان بیسارفلان
+                  بیسارفلان بیسارفلان بیسار
+                </div>
+                <button class="Add_to_shopping_cart">
+                  اضافه کردن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="countdownBox">
+            <h3 class="secondsC2">0</h3>
+            <span>ثانیه</span>
+            <h3 class="minutesC2">0</h3>
+            <span>دقیقه</span>
+            <h3 class="hoursC2">0</h3>
+            <span>ساعت</span>
+            <h3 class="daysC2">0</h3>
+            <span>روز</span>
+          </div>
+        </div>
+        <div class="Case_Container">
+          <div class="Card">
+            <div class="Cases">
+              <div class="case Front_Face">
+                <img src="/Web Project/Images/6.jpg" alt="" />
+              </div>
+              <div class="case Back_Face">
+                <div class="Case_Title">پرونده فلان بیسار</div>
+                <ul>
+                  <li class="Case_Difficulty">درجه سختی: فلان قدر از 10</li>
+                  <li class="Case_Producer">محصول: فلان سایت</li>
+                </ul>
+                <span>توضیحات:</span>
+                <div class="Case_Description">
+                  فلان بیسار فلان بیسارفلان بیسارفلان بیسارفلان بیسارفلان
+                  بیسارفلان بیسارفلان بیسار
+                </div>
+                <button class="Add_to_shopping_cart">
+                  اضافه کردن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="countdownBox">
+            <h3 class="secondsC3">0</h3>
+            <span>ثانیه</span>
+            <h3 class="minutesC3">0</h3>
+            <span>دقیقه</span>
+            <h3 class="hoursC3">0</h3>
+            <span>ساعت</span>
+            <h3 class="daysC3">0</h3>
+            <span>روز</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="BestSellers">
+      <div class="title">بهترین پرونده های -نام برند-</div>
+      <div class="Carousel">
+        <div id="leftB">
+          <button class="left"><i class="fas fa-arrow-circle-left"></i></button>
+        </div>
+        <div class="Carousel_imageContainer">
+          <div class="images" id="imgs">
+            <img src="/Web Project/Images/1.jpg" alt="img1" />
+            <img src="/Web Project/Images/2.jpg" alt="img2" />
+            <img src="/Web Project/Images/3.jpg" alt="img3" />
+            <img src="/Web Project/Images/1.jpg" alt="img1" />
+            <img src="/Web Project/Images/1.jpg" alt="img1" />
+            <img src="/Web Project/Images/2.jpg" alt="img2" />
+            <img src="/Web Project/Images/2.jpg" alt="img2" />
+            <img src="/Web Project/Images/3.jpg" alt="img3" />
+            <img src="/Web Project/Images/1.jpg" alt="img3" />
+          </div>
+        </div>
+        <div id="rightB">
+          <button class="right">
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </section> -->
+    <script src="script.js"></script>
+  </body>
+</html>

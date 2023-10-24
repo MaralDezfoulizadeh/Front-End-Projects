@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background-color: #390404;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+img {
+  max-width: 100%;
+}
+.Assassins_Creed_Card {
+  width: 300px;
+  height: 430px;
+  border-radius: 3px;
+  position: relative;
+  transition: transform 0.5s ease;
+  transform-style: preserve-3d;
+}
+.BG_Image {
+  position: absolute;
+  object-fit: cover;
+  object-position: left;
+  height: 100%;
+  z-index: 10;
+  border-radius: inherit;
+  max-width: 100%;
+}
+.Assassins_Creed_Card:hover {
+  transform: rotateX(28deg);
+}
+.Assassins_Creed_Card::after {
+  content: "";
+  position: absolute;
+  background-color: #0e0000;
+  inset: 80% 1rem 1rem;
+  transform: translateZ(-100px);
+  filter: blur(1rem);
+  translate: 0;
+  z-index: 1;
+  transition: transform 0.5s ease, translate 0.5s ease;
+}
+.Assassins_Creed_Card:hover::after {
+  transform: rotateX(28deg);
+  translate: 0 60px;
+}
+.Assassins_Creed_Card::before {
+  content: "";
+  position: absolute;
+  /* background: black; */
+  inset: 0;
+  z-index: 100;
+  background-image: radial-gradient(circle 500px, transparent, rgb(0, 0, 0));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.Assassins_Creed_Card:hover::before {
+  opacity: 1;
+}
+.Logo {
+  position: absolute;
+  z-index: 1000;
+  filter: invert(1);
+  width: 75%;
+  margin-inline: auto;
+  inset: auto 0 1rem;
+  transform: translateY(0rem) translateZ(20px);
+  transition: transform 0.5s ease, rotate 0.5s ease;
+}
+.Assassins_Creed_Card:hover .Logo {
+  transform: translateY(-2rem) translateZ(20px);
+  rotate: x -28deg;
+}
+.Front_Image {
+  position: absolute;
+  transform: scale(0.6);
+  opacity: 0;
+  z-index: 100;
+  bottom: -75px;
+  transform-origin: bottom;
+  transition: opacity 0.5s ease, transform 0.5s ease, rotate 0.5s ease;
+  /* background-image: linear-gradient(180deg, transparent, black); */
+}
+.Assassins_Creed_Card:hover .Front_Image {
+  opacity: 1;
+  transform: translateY(-2rem) translateZ(-80px) scale(0.85);
+  rotate: x -28deg;
+}
